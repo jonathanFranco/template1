@@ -1,0 +1,302 @@
+body{
+	user-select: none;
+	margin: 0;
+	padding: 0;	
+  font-family: 'Roboto', sans-serif;
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    user-select: none;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#img-download{
+  transform: scale(0.8);
+  transition: 0.2s;
+}
+
+#img-download:hover{
+  transform: scale(0.9);
+  position: relative;
+  transition: 0.2s;
+  box-shadow: 2px 2px 10px grey;
+}
+
+.page-footer{
+  cursor: default;
+  user-select: text;
+}
+
+.top-nav-collapse {
+  transition: 0.3s;
+  background-color: #0099CC;
+}
+
+.nav-info{
+  border-bottom: 1px solid rgb(50,50,50);
+  user-select: text;
+  cursor: default;
+}
+
+/*
+
+.nav-pills > li > a.active {
+  background-color: transparent!important;
+  color: rgb(255,53,71)!important;
+  border: 0px solid rgb(255,53,71)!important;
+  border-radius: 0%!important;
+  transform: scale(1.0);
+  transition: 0.3s;
+  text-shadow: 1px 1px 10px rgb(255,53,71);
+}
+
+.mobile-pills > li > a.active  {
+  background-color: red!important;
+  color: grey!important;
+  border: 0px solid rgb(255,53,71)!important;
+  border-radius: 0%!important;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  width: 100%;
+}
+
+.nav-link{
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  color: #ddd;
+  transition: 0.2s;
+}
+
+*/
+
+#nav-logo{
+  transition: 0.2s;
+  transform: scale(1.3);
+}
+
+.navbar{
+  box-shadow: none!important;
+}
+
+.nav-mobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0099CC;
+  overflow-x: hidden!important;
+  transition: 0.3s;
+}
+
+.btn-menu {
+  display: none;
+  font-size: 40px;
+}
+
+.nav-mobile-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-top: 30px;
+  transition: 0.5s;
+  overflow-y: scroll!important;
+}
+
+.nav-mobile a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-mobile a:hover, .nav-mobile a:focus {
+  color: #f1f1f1;
+}
+
+.nav-mobile .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 60px;
+}
+.navbar-brand-mobile{
+  display: none;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.wow{
+  overflow: hidden;
+}
+
+.load{
+  width: 100px;
+  height: 100px;
+  border: 5px solid #ddd;
+  border-top:5px solid #FF8800;
+  border-radius: 100%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from{
+      transform: rotate(0deg);
+  }to{
+      transform: rotate(360deg);
+  }
+}
+
+#background-load{
+  height:100%;
+  width:100%;
+  background:#fff;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 9999;
+  overflow: hidden!important;
+ }
+
+/*indicators-carousel
+
+ .indicator{
+  background-color: #ddd!important;
+ }
+
+ ol li.active{
+  background-color: rgb(255,53,71)!important;
+ }
+
+*/
+
+#btn-fixed-style{
+  background-color: rgb(255,53,71)!important;
+  opacity: 0.5;
+}
+
+#btn-fixed-style:hover{
+  opacity: 1;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #0099CC;
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+  display: block;
+  }
+  #img-crsel-1,#img-crsel-2,#img-crsel-3,#img-crsel-4{
+    height: 200px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #0099CC;
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+  display: block;
+  }
+  #img-crsel-1,#img-crsel-2,#img-crsel-3,#img-crsel-4{
+    height: 200px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .nav-mobile a {font-size: 20px}
+  .nav-mobile .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  height: 100%;
+  }
+}

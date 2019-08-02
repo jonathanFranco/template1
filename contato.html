@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Template</title>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mdb.css">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script type="text/javascript" src="js/mdb.js"></script>
+	<script type="text/javascript" src="js/side-menu.js"></script>
+	<script type="text/javascript" src="js/loading.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+</head>
+<body onload="loading();" class="fadeIn" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div id="background-load">
+    	<div class="load"></div>
+  	</div>
+
+
+
+  <!--Desktop Menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container nav-effect">
+        <a class="navbar-brand font-weight-bold text-light" href="index.html">Logo</a>
+        <div class="nav-lg justify-content-end">
+          <ul class="nav navbar-nav smooth-scroll">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="membros.html">Membros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#four">Blogs</a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Desktop Menu-->
+
+      <!--Mobile Menu-->
+      <span class="btn-menu white-text font-weight-bold" style="cursor:pointer;" onclick="openNav()"><i
+          class="fas fa-bars"></i></span> <a class="mr-auto mx-2 btn-menu text-light">Logo</a>
+      <div id="myNav" class="nav-mobile" style="overflow: hidden;">
+
+        <div class="my-4 ml-3 text-light">
+          <h1>Logo</h1>
+          <a id="close-btn" class="closebtn white-text mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></a>
+        </div>
+
+        <hr class="my-0 bg-light">
+
+        <div class="container navbar-light nav-mobile-content text-left navbar-nav" id="menu-content"
+          style="font-size: 20px;">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="membros.html"><i class="fas fa-info-circle"></i>Membros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light"><i class="fas fa-users"></i>Sobre</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href=""><i class="fas fa-download"></i>Blogs</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link text-light"><i class="fas fa-envelope"></i>Contato</a>
+          </li>
+        </div>
+      </div>
+      <!--Mobile Menu-->
+
+  </nav>
+
+
+  <div id="intro" class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Slides/img%20(33).jpg');">
+
+<div class="mask text-center rgba-black-strong">
+  
+          <div class="container d-flex justify-content-center align-items-center h-100">
+
+                <div class="col-md-8">
+
+                    <!-- Heading -->
+                     <h2 class="display-4 font-weight-bold mb-2 wow fadeInDown text-light" data-wow-delay="0.4s"><i class="fas fa-envelope"></i> Contato</h2>
+
+                    <!-- Description -->
+                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>    
+
+                </div>
+
+        </div>
+  
+</div>
+</div>
+
+
+
+
+<main>
+
+    <!--Contato-->
+      <section class="container py-5">
+
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-5 my-5">
+
+            <!--Form with header-->
+            <form class="card p-4 text-center border border-light">
+
+              <!-- Default form contact -->
+
+              <p class="h4 mb-4"> <i class="fas fa-envelope mr-3"></i> Mande sua Mensagem</p>
+
+              <!-- Name -->
+              <input type="text" class="form-control mb-4" placeholder="Nome" name="nome" id="nome" required="">
+
+              <!-- Email -->
+              <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email" required="">
+
+              <!-- Email -->
+              <input type="number" class="form-control mb-4" placeholder="Telefone" name="tel" id="tel" required="">
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea class="form-control rounded-0" class="form-control mb-4" name="msg" id="msg" required=""
+                  rows="3" placeholder="Mensagem"></textarea>
+              </div>
+
+
+              <div class="text-center mt-4">
+                <button type="reset" class="btn btn-outline-default btn-md">Limpar</button>
+                <button class="btn btn-default btn-md">Enviar</button>
+              </div>
+
+            </form>
+            <!--Form with header-->
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-7 my-5 bounceInRight" data-wow-delay="0.6s">
+
+            <!--Google map-->
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="">
+              <iframe
+                src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </div>
+            <div class="row my-4 grey-text">
+              <div class="col-md-8">
+                <h5><b>R. X Câmara, 111 - Bairro</b></h5>
+                <h5>Seg - Sex: 8:00 às 18:00. Sáb: 08:00 às 12:00</h5>
+              </div>
+
+            </div>
+
+            <!--Google Maps-->
+
+            <br>
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+
+      </section>
+      <!--Contato-->
+
+
+</main>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-light text-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Project</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+          esse
+          quasi, veritatis totam voluptas nostrum.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="membros.html" class="text-dark">MEMBROS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="sobre.html" class="text-dark">SOBRE</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!" class="text-dark">BLOGS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="contato.html" class="text-dark">CONTATO</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating bg-success">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-dark">© 2019 Copyright -
+    <span> Project</span>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  	
+
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/side-menu.js"></script>
+</body>
+</html>
