@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Template</title>
-    <link rel="icon" href="img/icon.png" type="image/png" />
+	<title>ACESHAC - Associação Cearense de Empresas Softhouses e Automação Comercial</title>
+  <link rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -19,6 +19,7 @@
 </head>
 <body onload="loading();" class="fadeIn">
 
+  <!--Loading-->
 	<div id="background-load">
     	<div class="load"></div>
   	</div>
@@ -28,7 +29,7 @@
 	<!--Desktop Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <div class="container nav-effect">
-        <a class="navbar-brand" href="index.html">Logo</a>
+        <a class="navbar-brand" href="index.html"><span id="logo-span" class="text-info">AC</span><span id="logo-span2" class="text-primary font-weight-bold">ESHAC</span></a>
         <div class="nav-lg justify-content-end">
           <ul class="nav navbar-nav smooth-scroll">
             <li class="nav-item active">
@@ -44,10 +45,6 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#four">Blogs</a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="contato.html">Contato</a>
             </li>
           </ul>
@@ -57,11 +54,11 @@
 
       <!--Mobile Menu-->
       <span class="btn-menu white-text font-weight-bold" style="cursor:pointer;" onclick="openNav()"><i
-          class="fas fa-bars"></i></span> <a class="mr-auto mx-2 btn-menu text-light">Logo</a>
+          class="fas fa-bars"></i></span> <a class="mr-auto mx-2 btn-menu text-light"><span class="text-info">AC</span><span class="text-primary font-weight-bold">ESHAC</span></a>
       <div id="myNav" class="nav-mobile" style="overflow: hidden;">
 
         <div class="my-4 ml-3 text-light">
-          <h1>Logo</h1>
+          <h1><span class="text-light">AC</span><span class="text-light font-weight-bold">ESHAC</span></h1>
           <a id="close-btn" class="closebtn white-text mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></a>
         </div>
 
@@ -70,23 +67,19 @@
         <div class="container navbar-light nav-mobile-content text-left navbar-nav" id="menu-content"
           style="font-size: 20px;">
           <li class="nav-item active">
-            <a class="nav-link text-light"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link text-light"><i class="fas fa-home"></i> Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-light" href="membros.html"><i class="fas fa-info-circle"></i>Membros</a>
+            <a class="nav-link text-light" href="membros.html"><i class="fas fa-users"></i> Membros</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-light" ><i class="fas fa-users"></i>Sobre</a>
+            <a class="nav-link text-light" href=""><i class="fas fa-info-circle"></i> Sobre</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-light" href=""><i class="fas fa-download"></i>Blogs</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light" href="contato.html"><i class="fas fa-envelope"></i>Contato</a>
+            <a class="nav-link text-light" href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
           </li>
         </div>
       </div>
@@ -94,7 +87,8 @@
 
   </nav>
 
-<div id="intro" class="view" style="background-image: url('https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg');">
+<!--Index-->
+<div id="intro" class="view" style="background-image: url('img/home.jpg');background-size: cover;">
 
 <div class="mask text-center rgba-black-strong">
   
@@ -103,12 +97,14 @@
                 <div class="col-md-8">
 
                 		<!-- Heading -->
-                     <h2 class="display-3 font-weight-bold mb-2 wow fadeInDown text-light" data-wow-delay="0.4s">Project</h2>
+                     <div class="display-4 mb-2 wow fadeInDown" data-wow-delay="0.4s"><span class="text-info">BEM </span><span class="text-primary font-weight-bold">VINDO!</span></div>
 
                      <hr class="bg-light">
 
                     <!-- Description -->
-                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>    
+                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s" style="font-weight: 400">Conheça a associação cearense de empresas, softhouses e automação comercial.</h4> 
+
+                    <h1><i class="mt-5 fas fa-chevron-down white-text"></i></h1>   
 
                 </div>
 
@@ -121,7 +117,8 @@
 </header>
 
 <main>
-	<section class="bg-light">
+  <!--Introdução-->
+	<section class="bg-light" style="overflow: hidden;">
 		<div class="p-5 text-center container">
 			<h1 class="">Introdução</h1>
 
@@ -131,7 +128,7 @@
 
             <!--Grid column-->
             <div class="col-md-4 my-4 wow zoomInLeft" data-wow-delay="0.2s">
-              <i class="fas fa-briefcase display-2 text-warning"></i>
+              <i class="fas fa-briefcase display-2 text-primary"></i>
               <h4 class="text-uppercase font-weight-bold text-dark mt-2 mb-3"><strong>Exemplo</strong></h4>
               <p class="grey-text mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
@@ -139,7 +136,7 @@
 
             <!--Grid column-->
             <div class="col-md-4 my-4 wow zoomInUp" data-wow-delay="0.4s">
-              <i class="fas fa-comments display-2 text-warning"></i>
+              <i class="fas fa-comments display-2 text-primary"></i>
               <h4 class="text-uppercase font-weight-bold text-dark mt-2 mb-3"><strong>Exemplo</strong></h4>
               <p class="grey-text mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
@@ -147,7 +144,7 @@
 
             <!--Grid column-->
             <div class="col-md-4 my-4 wow zoomInRight" data-wow-delay="0.8s">
-              <i class="fas fa-edit display-2 text-warning"></i>
+              <i class="fas fa-edit display-2 text-primary"></i>
               <h4 class="text-uppercase font-weight-bold text-dark mt-2 mb-3"><strong>Exemplo</strong></h4>
               <p class="grey-text mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
@@ -158,94 +155,103 @@
         </div>
 			
 		</div>
-
-
 		
 	</section>
-
-	<section class="white-color" style="">
+  <!--Membros-->
+	<section class="white-color" style="overflow: hidden;">
 		<div class="container justify-content-center text-left pt-5">
 
 			<div class="container-fluid d-flex align-items-center justify-content-center h-100">
 
             <div class="row d-flex text-left py-5">
 
-                <div class="col-md-6 mb-2">
+                <div class="col-md-6 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
 
                     <!-- Heading -->
-                     <h1 class="font-weight-bold text-dark" data-wow-delay="0.4s">Membros</h1>
+                     <h1 class="font-weight-bold text-dark">Membros</h1>
 
                     <!-- Description -->
-                    <h5 class="text-dark " data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
+                    <h5 class="text-dark">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
 
                     <a class="h6 text-dark" href="membros.html">ver mais <i class="fas fa-arrow-right"></i></a>
 
                 </div>
 
-                <div class="col-md-6 mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/photo2.jpg">
+                <div class="col-md-6 mb-2 wow fadeInRight" data-wow-delay="0.4s">
+                    <img class="img-fluid" src="img/membros.jpg">
                 </div>
-
 
             </div>
 
         </div>
 			
 		</div>
-		
 	</section>
-
-		<section class="bg-dark" style="">
-		<div class="container justify-content-center text-left pt-5">
+    <!--Sobre Nós-->
+		<section class="bg-dark" style="overflow: hidden;">
+		<div class="container justify-content-center text-left">
 
 			<div class="container-fluid d-flex align-items-center justify-content-center h-100">
 
             <div class="row d-flex text-left py-5">
 
 
-                <div class="col-md-6 mb-2">
-                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg">
+                <div class="col-md-7 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
+                    <img class="img-fluid" src="img/img-2.png">
                 </div>
 
-                <div class="col-md-6 mb-2">
+                <div class="col-md-5 mb-2 wow fadeInRight" data-wow-delay="0.4s">
 
                     <!-- Heading -->
-                     <h1 class="font-weight-bold text-light" data-wow-delay="0.4s">Sobre Nós</h1>
+                     <h1 class="font-weight-bold text-light">Sobre Nós</h1>
 
                     <!-- Description -->
-                    <h5 class="text-light " data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>  
+                    <h5 class="text-light">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>  
 
                     <a class="h6 text-light" href="membros.html">ver mais <i class="fas fa-arrow-right"></i></a>  
 
                 </div>
-
 
             </div>
 
         </div>
 			
 		</div>
-		
 	</section>
+  <!--Feed-->
+	<section class="streak streak-md streak-photo" id="intro" style="background-image: url('img/feed.jpg');background-size: cover;overflow: hidden;">
 
-	<section class="streak streak-md streak-photo" id="intro" style="background-image: url('https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(50).jpg');background-size: cover;">
+    <div class="mask rgba-blue-strong">
 
-		<div class="p-5 mask text-center rgba-blue-strong">
-  
-          <div class="d-flex justify-content-center align-items-center h-100">
+		<div class="container justify-content-center text-left pt-5">
 
-                <div class="col-md-12 p-5">
+      <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+            <div class="row d-flex text-left py-5">
+
+                <div class="col-md-6 mb-2 wow fadeInDown" data-wow-delay="0.4s">
+
+                    <!-- Heading -->
+                     <h1 class="font-weight-bold white-text" data-wow-delay="0.4s">Feed de Notícias</h1>
 
                     <!-- Description -->
-                    <h4 class="text-light font-weight-bold my-4 wow fadeInUp" data-wow-delay="0.5s">If you have any legal problem in your life ... We are available</h4>   
+                    <h5 class="white-text font-weight-bold " data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h5>    
 
-                    <a class="btn btn-light" href=""><i class="fas fa-envelope"></i> Contato</a> 
+                    <a class="h5 text-light" href="">Ver Mais <i class="fas fa-arrow-right"></i></a>
 
                 </div>
 
-        </div>
-  
-	</div>
+                <div class="col-md-6 mb-2 wow fadeInUp" data-wow-delay="0.4s">
+
+                  <div style="border-radius: 10px;border-bottom:10px solid #1565c0;box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2) ">
+                    <a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Etfw">Tweets by FCBarcelona</a> 
+                  </div>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+      
+          </div>
+      </div>
 		
 	</section>
 </main>
@@ -263,8 +269,7 @@
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Project</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+        <h5 class="font-weight-bold text-uppercase mb-4">Aceshac</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
           esse
           quasi, veritatis totam voluptas nostrum.</p>
@@ -312,7 +317,7 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">Endereço</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -325,11 +330,11 @@
           </li>
           <li>
             <p>
-              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <i class="fas fa-phone mr-3"></i> (85) 98877-6655</p>
           </li>
           <li>
             <p>
-              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <i class="fas fa-phone mr-3"></i> (85) 98877-6655</p>
           </li>
         </ul>
 
@@ -342,7 +347,7 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">redes sociais</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
@@ -353,8 +358,8 @@
           <i class="fab fa-whatsapp"></i>
         </a>
         <!-- Google +-->
-        <a type="button" class="btn-floating btn-gplus">
-          <i class="fab fa-google-plus-g"></i>
+        <a type="button" class="btn-floating bg-info">
+          <i class="fab fa-twitter"></i>
         </a>
         <!-- Dribbble -->
         <a type="button" class="btn-floating btn-dribbble">
@@ -372,7 +377,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 text-dark">© 2019 Copyright -
-    <span> Project</span>
+    <span> ACESHAC</span>
   </div>
   <!-- Copyright -->
 

@@ -45,7 +45,7 @@ header,
 
 .top-nav-collapse {
   transition: 0.3s;
-  background-color: #0099CC;
+  background-color: #2E2E2E;
 }
 
 .nav-info{
@@ -160,15 +160,12 @@ header,
   width:100%;
   position:absolute;
 }
-.wow{
-  overflow: hidden;
-}
 
 .load{
   width: 100px;
   height: 100px;
   border: 5px solid #ddd;
-  border-top:5px solid #FF8800;
+  border-top:5px solid #0d47a1;
   border-radius: 100%;
   position: absolute;
   top:0;
@@ -240,10 +237,14 @@ header,
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+#logo-span,#logo-span2{
+  font-size: 40px;
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: #0099CC;
+    background-color: #2E2E2E;
   }
   .nav-lg{
     display: none;
@@ -264,11 +265,18 @@ header,
   .carousel-indicators{
     display: none;
   }
+  #fb-desk{
+    display: none!important;
+  }
+  #fb-mobile{
+    display: initial!important;
+  }
+
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: #0099CC;
+    background-color: #2E2E2E;
   }
   .nav-lg{
     display: none;
@@ -289,6 +297,13 @@ header,
   .carousel-indicators{
     display: none;
   }
+  #fb-desk{
+    display: none!important;
+  }
+  #fb-mobile{
+    display: initial!important;
+  }
+
 }
 
 @media screen and (max-height: 450px) {

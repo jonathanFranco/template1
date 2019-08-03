@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8" name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Template</title>
-    <link rel="icon" href="img/icon.png" type="image/png" />
+	<title>ACESHAC - Associação Cearense de Empresas Softhouses e Automação Comercial</title>
+  <link rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -25,11 +25,10 @@
 
 
 <header>
-  
-  <!--Desktop Menu-->
+   <!--Desktop Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <div class="container nav-effect">
-        <a class="navbar-brand font-weight-bold text-light" href="index.html">Logo</a>
+        <a class="navbar-brand" href="index.html"><span id="logo-span" class="text-info">AC</span><span id="logo-span2" class="text-primary font-weight-bold">ESHAC</span></a>
         <div class="nav-lg justify-content-end">
           <ul class="nav navbar-nav smooth-scroll">
             <li class="nav-item">
@@ -37,15 +36,11 @@
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link">Membros</a>
+              <a class="nav-link" href="membros.html">Membros</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" >Sobre</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#four">Blogs</a>
+              <a class="nav-link" href="sobre.html">Sobre</a>
             </li>
 
             <li class="nav-item">
@@ -58,11 +53,11 @@
 
       <!--Mobile Menu-->
       <span class="btn-menu white-text font-weight-bold" style="cursor:pointer;" onclick="openNav()"><i
-          class="fas fa-bars"></i></span> <a class="mr-auto mx-2 btn-menu text-light">Logo</a>
+          class="fas fa-bars"></i></span> <a class="mr-auto mx-2 btn-menu text-light"><span class="text-info">AC</span><span class="text-primary font-weight-bold">ESHAC</span></a>
       <div id="myNav" class="nav-mobile" style="overflow: hidden;">
 
         <div class="my-4 ml-3 text-light">
-          <h1>Logo</h1>
+          <h1><span class="text-light">AC</span><span class="text-light font-weight-bold">ESHAC</span></h1>
           <a id="close-btn" class="closebtn white-text mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></a>
         </div>
 
@@ -71,32 +66,27 @@
         <div class="container navbar-light nav-mobile-content text-left navbar-nav" id="menu-content"
           style="font-size: 20px;">
           <li class="nav-item">
-            <a class="nav-link text-light" href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="nav-link text-light"  href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light"><i class="fas fa-users"></i> Membros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href=""><i class="fas fa-info-circle"></i> Sobre</a>
           </li>
 
           <li class="nav-item active">
-            <a class="nav-link text-light"><i class="fas fa-info-circle"></i>Membros</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light" ><i class="fas fa-users"></i>Sobre</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light" href=""><i class="fas fa-download"></i>Blogs</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light" href="contato.html"><i class="fas fa-envelope"></i>Contato</a>
+            <a class="nav-link text-light" href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
           </li>
         </div>
       </div>
       <!--Mobile Menu-->
-
   </nav>
 
 
-  <div id="intro" class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20(131).jpg');">
+  <div id="intro" class="view" style="background-image: url('img/membros.jpg');background-size: cover;">
 
 <div class="mask text-center rgba-black-strong">
   
@@ -105,9 +95,12 @@
                 <div class="col-md-8">
 
                     <!-- Heading -->
-                     <h2 class="display-4 font-weight-bold mb-2 wow fadeInDown text-light" data-wow-delay="0.4s"><i class="fas fa-users"></i> Membros</h2>  
-                     <!-- Description -->
-                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>      
+                     <h2 class="display-4 font-weight-bold mb-2 wow fadeInDown text-primary" data-wow-delay="0.4s"><i class="fas fa-users text-info"></i> Membros</h2>
+
+                    <!-- Description -->
+                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>    
+
+                    <h1><i class="mt-5 fas fa-chevron-down white-text"></i></h1>
 
                 </div>
 
@@ -115,7 +108,6 @@
   
 </div>
 </div>
-
 </header>
   
 
@@ -197,8 +189,7 @@
       <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Project</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+        <h5 class="font-weight-bold text-uppercase mb-4">Aceshac</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
           esse
           quasi, veritatis totam voluptas nostrum.</p>
@@ -246,7 +237,7 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">Endereço</h5>
 
         <ul class="list-unstyled">
           <li>
@@ -259,11 +250,11 @@
           </li>
           <li>
             <p>
-              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <i class="fas fa-phone mr-3"></i> (85) 98877-6655</p>
           </li>
           <li>
             <p>
-              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <i class="fas fa-phone mr-3"></i> (85) 98877-6655</p>
           </li>
         </ul>
 
@@ -276,7 +267,7 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">redes sociais</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
@@ -287,8 +278,8 @@
           <i class="fab fa-whatsapp"></i>
         </a>
         <!-- Google +-->
-        <a type="button" class="btn-floating btn-gplus">
-          <i class="fab fa-google-plus-g"></i>
+        <a type="button" class="btn-floating bg-info">
+          <i class="fab fa-twitter"></i>
         </a>
         <!-- Dribbble -->
         <a type="button" class="btn-floating btn-dribbble">
@@ -306,7 +297,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3 text-dark">© 2019 Copyright -
-    <span> Project</span>
+    <span> ACESHAC</span>
   </div>
   <!-- Copyright -->
 

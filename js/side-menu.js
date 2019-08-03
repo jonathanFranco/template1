@@ -13,12 +13,14 @@ function closeNav() {
 //Navbar Animation
  $(window).on('scroll', function () {
       if ($(window).scrollTop()) {
-        $("#nav-logo").css({ 'transform': 'scale(0.9)' });
+        $("#logo-span,#logo-span2").css({ 'font-size': '30px' });
+        $("#logo-span,#logo-span2").css({ 'transition': '0.1s' });
         $(".nav-effect").css({ 'transform': 'scale(0.9)' });
         $(".nav-effect").css({ 'transition': '0.3s' });
         $(".navbar").css({ 'box-shadow': '2px 2px 2px black' });
       } else {
-        $("#nav-logo").css({ 'transform': 'scale(1.3)' });
+        $("#logo-span,#logo-span2").css({ 'font-size': '40px' });
+        $("#logo-span,#logo-span2").css({ 'transition': '0.1s' });
         $(".nav-effect").css({ 'transform': 'scale(1.0)' });
         $(".nav-effect").css({ 'transition': '0.3s' });
         $(".navbar").css({ 'box-shadow': '2px 2px 2px black' });
