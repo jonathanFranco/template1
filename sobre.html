@@ -24,6 +24,7 @@
     	<div class="load"></div>
   	</div>
 
+
 <header>
    <!--Desktop Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
@@ -39,12 +40,12 @@
               <a class="nav-link" href="membros.html">Membros</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
+            <li class="nav-item active">
+              <a class="nav-link">Sobre</a>
             </li>
 
-            <li class="nav-item active">
-              <a class="nav-link">Contato</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -73,12 +74,12 @@
             <a class="nav-link text-light" href="membros.html"><i class="fas fa-users"></i> Membros</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-light" href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
+          <li class="nav-item active">
+            <a class="nav-link text-light"><i class="fas fa-info-circle"></i> Sobre</a>
           </li>
 
-          <li class="nav-item active">
-            <a class="nav-link text-light"><i class="fas fa-envelope"></i> Contato</a>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contato.html"><i class="fas fa-envelope"></i> Contato</a>
           </li>
         </div>
       </div>
@@ -86,7 +87,7 @@
   </nav>
 
 
-  <div id="intro" class="view" style="background-image: url('img/contato.jpg');background-size: cover;">
+  <div id="intro" class="view" style="background-image: url('img/sobre.jpg');background-size: cover;">
 
 <div class="mask text-center rgba-black-strong">
   
@@ -95,10 +96,10 @@
                 <div class="col-md-8">
 
                     <!-- Heading -->
-                     <h2 class="display-4 font-weight-bold mb-2 wow fadeInDown text-primary" data-wow-delay="0.4s"><i class="fas fa-envelope text-info"></i> Contato</h2>
+                     <h2 class="display-4 font-weight-bold mb-2 wow fadeInDown text-primary" data-wow-delay="0.4s"><i class="fas fa-info-circle text-info"></i> Sobre Nós</h2>
 
                     <!-- Description -->
-                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">Esta página oferece um serviço de contato direto com a ACESHAC</h4>    
+                    <h4 class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">Conheça nossa história e os nossos objetivos.</h4>    
 
                     <h1><i class="mt-5 fas fa-chevron-down white-text"></i></h1>
 
@@ -110,85 +111,80 @@
 </div>
 </header>
 
- 
-
-
-
 
 <main>
+  <!--História-->
+  <section class="bg-light" style="overflow: hidden;">
+    <div class="container justify-content-center text-left pt-5">
 
-    <!--Contato-->
-      <section class="container py-5">
+      <div class="container-fluid d-flex align-items-center justify-content-center h-100">
 
-        <div class="row">
+            <div class="row d-flex text-left py-5">
 
-          <!--Grid column-->
-          <div class="col-md-5 my-5">
+                <div class="col-md-6 mb-2 wow fadeInLeft" data-wow-delay="0.4s">
 
-            <!--Form with header-->
-            <form method="POST" action="send_email.php" class="card p-4 text-center border border-light">
+                    <!-- Heading -->
+                     <h1 class="font-weight-bold text-dark" style="border-bottom: 2px solid black">História</h1>
 
-              <!-- Default form contact -->
+                    <!-- Description -->
+                    <h5 class="text-dark">A ACESHAC ( Associação Cearense de Softhouses e Automação Comercial ) foi fundada em 01 de agosto de 2018 com objetivo de prestar apoio e assistencia a todos os seus associados.</h5>    
 
-              <p class="h4 mb-4"> <i class="fas fa-envelope mr-3"></i> Mande sua Mensagem</p>
+                </div>
 
-              <!-- Name -->
-              <input type="text" class="form-control mb-4" placeholder="Nome" name="nome" id="nome" required="">
-
-              <!-- Email -->
-              <input type="email" class="form-control mb-4" placeholder="Email" name="email" id="email" required="">
-
-              <!-- Email -->
-              <input type="number" class="form-control mb-4" placeholder="Telefone" name="tel" id="tel" required="">
-
-              <!-- Message -->
-              <div class="form-group">
-                <textarea class="form-control rounded-0" class="form-control mb-4" name="msg" id="msg" required=""
-                  rows="3" placeholder="Mensagem"></textarea>
-              </div>
-
-
-              <div class="text-center mt-4">
-                <button type="reset" class="btn btn-outline-primary btn-md">Limpar</button>
-                <button class="btn btn-primary btn-md">Enviar</button>
-              </div>
-
-            </form>
-            <!--Form with header-->
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-7 my-5 bounceInRight" data-wow-delay="0.6s">
-
-            <!--Google map-->
-            <div id="map-container-google-2" class="z-depth-1-half map-container" style="">
-              <iframe
-                src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                <div class="col-md-6 mb-2 wow fadeInRight" data-wow-delay="0.4s">
+                    <img class="img-fluid" src="img/feed.jpg">
+                </div>
 
             </div>
-            <div class="row my-4 grey-text">
-              <div class="col-md-8">
-                <h5><b>R. X Câmara, 111 - Bairro</b></h5>
-                <h5>Seg - Sex: 8:00 às 18:00. Sáb: 08:00 às 12:00</h5>
-              </div>
-
-            </div>
-
-            <!--Google Maps-->
-
-            <br>
-
-          </div>
-          <!--Grid column-->
 
         </div>
+      
+    </div>
+  </section>
 
-      </section>
-      <!--Contato-->
+  <!--Feed-->
+  <section class="streak streak-md streak-photo" id="intro" style="background-image: url('img/img-2.png');background-size: cover;overflow: hidden;">
+
+    <div class="mask rgba-black-strong">
+
+    <div class="container justify-content-center text-left pt-5">
+
+      <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+          <!--Grid row-->
+          <div class="row text-center">
+
+            <!--Grid column-->
+            <div class="col-md-4 my-4 wow zoomInLeft" data-wow-delay="0.2s">
+              <i class="fas fa-calendar-check display-2 white-text"></i>
+              <h4 class="text-uppercase font-weight-bold text-light mt-2 mb-3"><strong>Objetivo</strong></h4>
+              <p class="grey-text mb-0">Desenvolver soluções para os problemas da categoria e
+              e promover congressos, seminarios, assembleias e outros eventos no intuito de melhor equipar seus associados.</p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 my-4 wow zoomInUp" data-wow-delay="0.4s">
+              <i class="fas fa-eye display-2 white-text"></i>
+              <h4 class="text-uppercase font-weight-bold text-light mt-2 mb-3"><strong>Visão</strong></h4>
+              <p class="white-text mb-0">Visiona o aprimoramento cultural, intelectual e profissional 
+                  sem tomar partidos ou ideologias. Agindo sempre no interesse mais amplo e geral do povo brasileiro.</p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 my-4 wow zoomInRight" data-wow-delay="0.8s">
+              <i class="fas fa-hands-helping display-2 white-text"></i>
+              <h4 class="text-uppercase font-weight-bold text-light mt-2 mb-3"><strong>Parcerias</strong></h4>
+              <p class="white-text mb-0">Celebra parcerias com fornecedores de equipamentos e ferramentas de desenvolvimento. Agindo sempre no interesse mais amplo e geral do povo brasileiro.</p>
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+      </div>
+    
+  </section>
 
 
 </main>
