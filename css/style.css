@@ -246,6 +246,10 @@ header,
   text-shadow: 5px 5px 10px black;
 }
 
+.card-img-top{
+  height: 250px;
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
