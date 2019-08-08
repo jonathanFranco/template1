@@ -278,8 +278,8 @@ header,
   #fb-mobile{
     display: initial!important;
   }
-  .navbar{
-    position: sticky!important;
+  #intro{
+    margin-top: 76px!important;
   }
 
 }
@@ -310,8 +310,8 @@ header,
   #fb-mobile{
     display: initial!important;
   }
-  .navbar{
-    position: sticky!important;
+  #intro{
+    margin-top: 76px!important;
   }
 
 }
