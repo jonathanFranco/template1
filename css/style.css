@@ -278,6 +278,9 @@ header,
   #fb-mobile{
     display: initial!important;
   }
+  .navbar{
+    position: sticky!important;
+  }
 
 }
 
@@ -306,6 +309,9 @@ header,
   }
   #fb-mobile{
     display: initial!important;
+  }
+  .navbar{
+    position: sticky!important;
   }
 
 }
