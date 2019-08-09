@@ -4,7 +4,7 @@ Coloque esse código abaixo do "Card Membro" anterior e preencha os dados: !!( On
 <div class="col-md-4 mb-4 wow fadeIn" data-wow-delay="0.4s">
 <div class="card bg-dark">
 <!-- Imagem -->
-<div class="view view-cascade overlay"><img class="card-img-top" src="img/membros/------.jpg" alt="Card image cap"></div>
+<img class="card-img-top" src="img/membros/------.jpg" alt="Card image cap">
 <!-- Card Conteúdo -->
 <div class="card-body card-body-cascade text-left">
 <h5 class="card-title text-light"><strong>------</strong></h5><!-- Nome do Membro -->
