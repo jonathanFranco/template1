@@ -282,10 +282,6 @@ header,
   #fb-mobile{
     display: initial!important;
   }
-  #intro{
-    margin-top: 76px!important;
-  }
-
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
@@ -314,10 +310,6 @@ header,
   #fb-mobile{
     display: initial!important;
   }
-  #intro{
-    margin-top: 76px!important;
-  }
-
 }
 
 @media screen and (max-height: 450px) {
