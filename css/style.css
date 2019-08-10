@@ -255,6 +255,10 @@ header,
   background-color: #fff;
 }
 
+.face:hover{
+  background-color: red!important;
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
