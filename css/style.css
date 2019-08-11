@@ -259,6 +259,15 @@ header,
   background-color: red!important;
 }
 
+.fa-chevron-down{
+  transition: 0.5s;
+}
+
+.fa-chevron-down:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
