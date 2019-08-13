@@ -38,8 +38,7 @@
 </div>
 <!-- Card -->
   </div>
-
-
+  
     <script>
     $(window).load(function(){
       <?php
@@ -79,12 +78,6 @@
       ?>
     }); 
   </script>
-
-
-
- 
-
-
 
 </body>
 </html>
