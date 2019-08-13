@@ -277,6 +277,21 @@ header,
   transition: 0.5s;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #757575; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #616161; 
+}
+
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
