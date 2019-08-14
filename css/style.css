@@ -26,16 +26,8 @@ header,
     background-size: cover;
 }
 
-#img-download{
-  transform: scale(0.8);
-  transition: 0.2s;
-}
-
-#img-download:hover{
-  transform: scale(0.9);
-  position: relative;
-  transition: 0.2s;
-  box-shadow: 2px 2px 10px grey;
+.field-icon { 
+  font-family: 'Muli', FontAwesome, sans-serif; 
 }
 
 .page-footer{
@@ -275,6 +267,10 @@ header,
 .fa-chevron-down:hover{
   transform: scale(1.1);
   transition: 0.5s;
+}
+
+section{
+  overflow: hidden!important;
 }
 
 /* Scroll Bar */
