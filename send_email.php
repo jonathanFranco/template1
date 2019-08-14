@@ -51,14 +51,14 @@
          $mail->Port = 465;
          $mail->SMTPSecure = 'ssl';
          $mail->SMTPAutoTLS = false;
-         $mail->Username = 'email@gmail.com'; // Conta de email existente e ativa em seu domínio
+         $mail->Username = 'aceshac.2019@gmail.com'; // Conta de email existente e ativa em seu domínio
          $mail->Password = ''; // Senha da sua conta de email
          // DADOS DO REMETENTE
-         $mail->Sender = "email@gmail.com"; // Conta de email existente e ativa em seu domínio
-         $mail->From = "email@gmail.com"; // Sua conta de email que será remetente da mensagem
+         $mail->Sender = "aceshac.2019@gmail.com"; // Conta de email existente e ativa em seu domínio
+         $mail->From = "aceshac.2019@gmail.com"; // Sua conta de email que será remetente da mensagem
          $mail->FromName = "Contato ACESHAC"; // Nome da conta de email
          // DADOS DO DESTINATÁRIO
-         $mail->AddAddress('email@gmail.com'); // Define qual conta de email receberá a mensagem
+         $mail->AddAddress('aceshac.2019@gmail.com'); // Define qual conta de email receberá a mensagem
          $mail->IsHTML(true);
          $mail->CharSet = 'utf-8';
          // DEFINIÇÃO DA MENSAGEM
