@@ -327,6 +327,7 @@ section{
   }
   .active{
     border-left: 5px solid #fff!important;
+    font-weight: bold!important;
   }
 
 }
@@ -362,6 +363,7 @@ section{
   }
   .active{
     border-left: 5px solid #fff!important;
+    font-weight: bold!important;
   }
 
 }
