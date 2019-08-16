@@ -15,11 +15,9 @@ function closeNav() {
         $("#logo").css({ 'transform': 'scale(0.8)','transition':'0.2s'});
         $(".nav-effect").css({ 'transform': 'scale(0.9)' });
         $(".nav-effect").css({ 'transition': '0.3s' });
-        $(".navbar").css({ 'box-shadow': '2px 2px 2px black' });
       } else {
         $("#logo").css({ 'transform': 'scale(1.0)','transition':'0.2s'});
         $(".nav-effect").css({ 'transform': 'scale(1.0)' });
         $(".nav-effect").css({ 'transition': '0.3s' });
-        $(".navbar").css({ 'box-shadow': '2px 2px 2px black' });
       }
     });

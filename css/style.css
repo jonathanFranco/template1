@@ -84,7 +84,7 @@ header,
 }
 
 .navbar{
-  box-shadow: none!important;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .nav-mobile {
@@ -231,7 +231,7 @@ header,
 */
 
 #shadow-effect{
-  text-shadow: 5px 5px 10px black;
+  text-shadow: 10px 10px 20px black!important;
 }
 
 .card-img-top{
@@ -325,6 +325,9 @@ section{
   #intro{
     margin-top: 72px!important;
   }
+  .active{
+    border-left: 5px solid #fff!important;
+  }
 
 }
 
@@ -356,6 +359,9 @@ section{
   }
   #intro{
     margin-top: 72px!important;
+  }
+  .active{
+    border-left: 5px solid #fff!important;
   }
 
 }
