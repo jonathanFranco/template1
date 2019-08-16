@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/mdb.css">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="js/mdb.js"></script>
 	<script type="text/javascript" src="js/side-menu.js"></script>
 	<script type="text/javascript" src="js/loading.js"></script>
@@ -24,12 +25,10 @@
     	<div class="load"></div>
   	</div>
 
-
-<header>
 <!--Desktop Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
       <div class="container nav-effect">
-        <a class="navbar-brand" href="#"><span id="logo-span">AC</span><span id="logo-span2" class="font-weight-bold">ESHAC</span></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="img/logo.svg"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
           <ul class="navbar-nav mr-auto mx-2">
             <li class="nav-item">
@@ -50,16 +49,16 @@
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light" href="https://www.facebook.com/Aceshac-2211734815759135/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a id="face-icon" class="nav-link waves-effect waves-light" href="https://www.facebook.com/Aceshac-2211734815759135/" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light" href="https://twitter.com/aceshac" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a id="twitter-icon" class="nav-link waves-effect waves-light" href="https://twitter.com/aceshac" target="_blank"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light" href="https://wa.me/5585997283590?text=Olá" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a id="whatsapp-icon" class="nav-link waves-effect waves-light" href="https://wa.me/5585997283590?text=Olá" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect waves-light" target="_blank" href="https://goo.gl/maps/By9EwGpcaRZU4kWZ8">
+              <a id="maps-icon" class="nav-link waves-effect waves-light" target="_blank" href="https://goo.gl/maps/By9EwGpcaRZU4kWZ8">
                 <i class="fas fa-map-marker-alt"></i></a>
             </li>
           </ul>
@@ -68,14 +67,16 @@
       <!--Desktop Menu-->
 
       <!--Mobile Menu-->
-      <span class="btn-menu white-text" style="cursor:pointer;" onclick="openNav()"><i
-          class="fas fa-bars mt-2" style="float: left;"></i><a class="mr-auto mx-2 btn-menu text-light"><span class="text-info">AC</span><span class="text-primary font-weight-bold">ESHAC</span></a></span> 
+      <div class="btn-menu">
+        <i class="fas fa-bars mr-3 white-text h1 btn-menu mt-2" onclick="openNav()"></i>
+        <img class="logo-mobile mr-auto mt-2" src="img/logo.svg">
+      </div>
       <div id="myNav" class="nav-mobile" style="overflow: hidden;">
 
-        <div class="my-4 ml-3 white-text">
-          <h1><span class="white-text">AC</span><span class="white-text font-weight-bold">ESHAC</span></h1>
-          <a id="close-btn" class="closebtn white-text mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></a>
-        </div>
+      <div class="my-4 ml-3 white-text">
+      <img class=" mr-auto" src="img/logo-mobile.svg">
+      <span id="close-btn" class="closebtn white-text mr-2 h1" onclick="closeNav()"><i class="h1 fas fa-times"></i></span>
+      </div>
 
         <hr class="my-0 bg-light">
 
@@ -109,39 +110,26 @@
   </nav>
 
 
-  <div id="intro" class="view smooth-scroll" style="background-image: url('img/membros.jpg');background-size: cover;">
-
-<div class="mask text-center rgba-black-light">
-  
-          <div class="container d-flex justify-content-center align-items-center h-100">
-
-                <div class="col-md-8">
-
-                    <!-- Heading -->
-                     <h2 id="shadow-effect" class="display-4 font-weight-bold mb-2 wow fadeInDown text-primary" data-wow-delay="0.4s"><i class="fas fa-users text-info"></i> Membros</h2>
-
-                     <hr class="bg-light">
-
-                    <!-- Description -->
-                    <h4 id="shadow-effect" class="white-text my-4 wow fadeInUp" data-wow-delay="0.5s">Aqui você encontra todos os nossos membros.</h4>    
-
-                    <a id="shadow-effect" href="#down"><i class="h1 py-5 fas fa-chevron-down white-text"></i></a>
-
-                </div>
-
+   <!--intro-->
+  <div style="background-image: url('img/membros.jpg');background-size: cover;background-attachment: fixed;">
+     <div class="mask rgba-black-strong py-5">
+        <div class="col-md-12  py-5">
+          <div class="my-3 wow fadeInUp" data-wow-delay="0.4s">
+            <!-- Heading -->
+            <p class="display-4 font-weight-bold text-primary text-center mb-5">MEMBROS</p>
+            <!-- Description -->
+            <h5 class="white-text text-center"><i class="h3-responsive text-warning fas fa-exclamation-triangle mr-2"></i>Para mais informações acesse os respectivos sites nos Cards abaixo.</h5>    
+          </div>
         </div>
-  
-</div>
-</div>
-</header>
+        </div>
+  </div>
 
 <main>
 
 <!--Membros-->
-<section id="down" class="text-center container py-5" style="overflow: hidden;user-select: text;">
-<h4 class="text-dark py-5 "><i class="h3 fas fa-info-circle"></i> Para mais informações <b>acesse os respectivos sites nos Cards abaixo.</b></h4> 
+<section id="down" class="text-center container" style="user-select: text;">
 
-<div class="row">
+<div class="row py-5">
 
 <!-- Letra A -->
 
@@ -587,7 +575,7 @@
 <h5 class="card-title text-light"><strong>Pcnet Automação</strong></h5><!-- Nome do Membro -->
 <p class="grey-text my-0"><i class="fas fa-id-card"></i> 12.928.626/0001-41</p><!-- CNPJ -->
 <a target="_blank" class="my-0 grey-text" href="http://pcnetautomacao.com.br/"><i class="fas fa-globe-americas"></i> pcnetautomacao.com.br</a><!-- Site -->
-<p class="grey-text my-0"><i class="fas fa-envelope"></i> atendimento@pcnetautomacao.com.br</p><!-- Email -->
+<p class="small grey-text my-0"><i class="fas fa-envelope"></i> atendimento@pcnetautomacao.com.br</p><!-- Email -->
 <p class="grey-text my-0"><i class="fas fa-phone"></i> (88)3613-2691</p><!-- Telefone -->
 <p class="small grey-text my-0"><i class="fas fa-map-marker-alt"></i> R. Domingos Olímpio, 301 Centro - Sobral</p><!-- Endereço -->
 <hr class="bg-light">
@@ -684,7 +672,7 @@
 <a target="_blank" class="my-0 grey-text" href="http://www.safei.com.br/"><i class="fas fa-globe-americas"></i> safei.com.br</a><!-- Site -->
 <p class="grey-text my-0"><i class="fas fa-envelope"></i>  safei@safei.com.br</p><!-- Email -->
 <p class="grey-text my-0"><i class="fas fa-phone"></i> (85)3246-5656</p><!-- Telefone -->
-<p class="small grey-text my-0"><i class="fas fa-map-marker-alt"></i> Av. Barão de Studart, 2360 sl 106 - Ed. Torre Quixadá</p><!-- Endereço -->
+<p class="small grey-text my-0"><i class="fas fa-map-marker-alt"></i> Av. Barão de Studart, 2360 sl 106</p><!-- Endereço -->
 <hr class="bg-light">
 <!-- Redes Sociais -->
 <div class="text-center">

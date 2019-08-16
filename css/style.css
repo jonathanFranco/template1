@@ -2,7 +2,7 @@ body{
 	user-select: none;
 	margin: 0;
 	padding: 0;	
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif!important;
 }
 @keyframes fadeIn {
 	0% { opacity: 0; }
@@ -13,21 +13,17 @@ html,
 body,
 header,
 #intro {
-    height: 100%;
-    user-select: none;
-    background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+  height: 100%;
+  user-select: none;
+  background-attachment: fixed;
+ font-family: 'Quicksand', sans-serif!important;
 }
 
 #intro {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.field-icon { 
-  font-family: 'Muli', FontAwesome, sans-serif; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .page-footer{
@@ -107,7 +103,6 @@ header,
 
 .btn-menu {
   display: none;
-  font-size: 40px;
 }
 
 .nav-mobile-content {
@@ -235,24 +230,12 @@ header,
 }
 */
 
-#logo-span,#logo-span2{
-  font-size: 40px;
-}
-
-#logo-span{
-  color: #33b5e5;
-}
-
-#logo-span2{
-  color: #4285F4;
-}
-
 #shadow-effect{
   text-shadow: 5px 5px 10px black;
 }
 
 .card-img-top{
-  height: 250px;
+  height: 230px;
   background-color: #fff;
 }
 
@@ -267,6 +250,30 @@ header,
 .fa-chevron-down:hover{
   transform: scale(1.1);
   transition: 0.5s;
+}
+
+#face-icon:hover{
+  color: #0d47a1;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+#twitter-icon:hover{
+  color: #33b5e5;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+#whatsapp-icon:hover{
+  color: #00C851;
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+#maps-icon:hover{
+  color: #aa66cc;
+  transition: 0.2s;
+  transform: scale(1.2);
 }
 
 section{
@@ -297,7 +304,7 @@ section{
     display: none;
   }
   .btn-menu{
-    display: block;
+    display: inline-block;
     float: left;
   }
   .navbar-brand{
@@ -316,7 +323,7 @@ section{
     display: initial!important;
   }
   #intro{
-    margin-top: 76px!important;
+    margin-top: 72px!important;
   }
 
 }
@@ -329,7 +336,7 @@ section{
     display: none;
   }
   .btn-menu{
-    display: block;
+    display: inline-block;
     float: left;
   }
   .navbar-brand{
@@ -348,7 +355,7 @@ section{
     display: initial!important;
   }
   #intro{
-    margin-top: 76px!important;
+    margin-top: 72px!important;
   }
 
 }
@@ -360,5 +367,15 @@ section{
   top: 15px;
   right: 35px;
   height: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+.nav-mobile {
+  overflow-y: scroll!important;
+
+}
+.nav-mobile-content {
+    overflow-y: scroll!important;
   }
 }
