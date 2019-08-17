@@ -21,7 +21,7 @@ Coloque esse código abaixo do "Card Membro" anterior e preencha os dados: !!( On
 <!-- Instagram -->
 <a title="Instagram" type="button" class="btn-floating btn-sm bg-danger my-0" href="---------" target="_blank"><i class="fab fa-instagram text-light"></i></a>
 <!-- Whatsapp -->
-<a title="Whatsapp" type="button" class="btn-floating btn-sm bg-success my-0" href="https://wa.me/5585------------?text=Olá" target="_blank"><i class="fab fa-whatsapp text-light"></i></a>
+<a title="Whatsapp" type="button" class="btn-floating btn-sm bg-success my-0" href="https://wa.me/55ddd------------?text=Olá" target="_blank"><i class="fab fa-whatsapp text-light"></i></a>
 <!-- Link Google Maps -->
 <a title="Localização" type="button" class="btn-floating btn-sm bg-secondary my-0" href="------------" target="_blank"><i class="fas fa-map-marker-alt text-light"></i></a>
 </div>
