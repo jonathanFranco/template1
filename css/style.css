@@ -4,10 +4,6 @@ body{
 	padding: 0;	
   font-family: 'Quicksand', sans-serif!important;
 }
-@keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1;}
-}
 
 html,
 body,

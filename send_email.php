@@ -6,11 +6,11 @@
   <meta author="Jonathan Franco">
   <title>Email Enviado!</title>
   <link rel="icon" href="img/icon.png" type="image/png" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/mdb.css">
   <script type="text/javascript" src="js/mdb.js"></script>
@@ -19,19 +19,19 @@
   <script type="text/javascript" src="js/velocity.min.js"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
 </head>
-<body style="overflow: hidden;" class="bg-success">
+<body style="overflow: hidden;background-image: linear-gradient(to bottom right, #00C851, #66bb6a);">
 
   <div class="justify-content-center d-flex align-items-center container my-5 col-md-7">
 
      <!-- Card -->
-<div class=" card-image bg-success">
+<div class="card-image">
   <!-- Content -->
   <div class="text-white text-center d-flex align-items-center  py-5 px-4 h-100">
     <div>
-      <h3 class="text-light"><i class="fas fa-envelope"></i> Concluído</h3>
-      <h3 class="card-title pt-2"><strong>Seu Email Foi Enviado Com Sucesso!!!</strong></h3>
-      <h5>Nós retornaremos o contato em breve, sua pergunta será respondida o mais rápido possível.</h5>
-     <a class="btn btn-light btn-rounded my-5" href="contato.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+      <p class="h2-responsive text-white font-weight-bold"><i class="fas fa-mail-bulk"></i> Concluído</p>
+      <p class="h3-responsive card-title pt-2 font-weight-bold"><strong>Seu Email Foi Enviado Com Sucesso !!!</strong></p>
+      <p class="h5-responsive font-weight-bold">Nós retornaremos o contato em breve, sua pergunta será respondida o mais rápido possível.</p>
+     <a class="btn btn-white btn-rounded my-5" href="contato.html"><i class="fas fa-arrow-left mr-1"></i> Voltar</a>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
 <!-- Card -->
   </div>
 
-    <script>
+<script>
     $(window).load(function(){
       <?php
          require_once("phpmailer/PHPMailerAutoload.php");
