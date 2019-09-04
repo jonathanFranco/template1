@@ -248,28 +248,11 @@ header,
   transition: 0.5s;
 }
 
-#face-icon:hover{
-  color: #0d47a1;
-  transition: 0.2s;
-  transform: scale(1.2);
-}
-
-#twitter-icon:hover{
+#face-icon:hover,#twitter-icon:hover,#whatsapp-icon:hover,#maps-icon:hover{
   color: #33b5e5;
   transition: 0.2s;
-  transform: scale(1.2);
-}
-
-#whatsapp-icon:hover{
-  color: #00C851;
-  transition: 0.2s;
-  transform: scale(1.2);
-}
-
-#maps-icon:hover{
-  color: #aa66cc;
-  transition: 0.2s;
-  transform: scale(1.2);
+  transform: translateY(1px);
+  text-shadow: 0 0 15px #33b5e5, 0 0 10px #33b5e5;
 }
 
 section{
@@ -319,11 +302,14 @@ section{
     display: initial!important;
   }
   #intro{
-    margin-top: 72px!important;
+    margin-top: 60px!important;
   }
   .active{
     border-left: 5px solid #fff!important;
     font-weight: bold!important;
+  }
+  .nav-link{
+    font-size: 25px!important;
   }
 
 }
@@ -355,11 +341,14 @@ section{
     display: initial!important;
   }
   #intro{
-    margin-top: 72px!important;
+    margin-top: 60px!important;
   }
   .active{
     border-left: 5px solid #fff!important;
     font-weight: bold!important;
+  }
+  .nav-link{
+    font-size: 25px!important;
   }
 
 }
