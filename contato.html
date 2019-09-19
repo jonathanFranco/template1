@@ -4,6 +4,8 @@
 	<meta charset="utf-8" name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta author="Jonathan Franco">
+  <meta name="theme-color" content="#4285F4">
+  <meta name="msapplication-navbutton-color" content="#4285F4">
 	<title>ACESHAC - Associação Cearense de Softhouses e Automação Comercial</title>
   <link rel="icon" href="img/icon.png" type="image/png" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -111,7 +113,7 @@
   </nav>
 
    <!--intro-->
-  <div style="background-image: url('img/contato.jpg');background-size: cover;background-attachment: fixed;">
+  <div onclick="closeNav()" style="background-image: url('img/contato.jpg');background-size: cover;background-attachment: fixed;">
      <div class="mask rgba-black-light py-5">
         <div class="col-md-12  py-5">
           <div class="my-3 wow fadeInUp" data-wow-delay="0.4s">
@@ -124,7 +126,7 @@
         </div>
   </div>
 
-<main>
+<main onclick="closeNav()">
 
     <!--Contato-->
       <section class="container">
@@ -200,7 +202,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="page-footer font-small bg-light pt-4">
+<footer onclick="closeNav()" class="page-footer font-small bg-light pt-4">
   <!-- Footer Links -->
   <div class="container text-center text-dark text-md-left">
     <!-- Footer links -->
